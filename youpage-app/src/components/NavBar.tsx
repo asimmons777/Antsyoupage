@@ -31,6 +31,14 @@ const NavBar: React.FC<NavBarProps> = ({ items = defaultItems, onSelect }) => { 
           </Link>
         );
       }
+
+      if (label === 'EXPERIENCE') {
+        return (
+          <Link key={label} to='/experience'>
+            {label}
+            </Link>
+        );
+      }
       
       return (
         <button

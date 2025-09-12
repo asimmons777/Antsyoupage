@@ -1,3 +1,4 @@
+/* Landing page styles */
 body {
     display: flex;
     height: 40vh;
@@ -6,6 +7,7 @@ body {
     padding: 0px;
     margin: 0px;
     border: 0px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif, Arial;
 }
 
 
@@ -32,7 +34,7 @@ footer { background-color: #7851A9;
 }
 
 #hub {background-color: #000f08;
-    gap: 190px;
+    gap: 130px;
     display: flex;
     flex-direction: row;
     padding-left:40px;
@@ -71,4 +73,72 @@ h1 {
     font-size: 80px;
     font-weight: 700;
     text-align: center;
+}
+
+/* NavBar styles */
+#hub a, #hub button {
+    -webkit-tap-highligh-color: transparent; 
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    color: #B7B6C1;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif, Arial;
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#hub a:link,
+#hub a:visited{
+    color: #B7B6C1;
+}
+
+#hub a:hover,
+#hub a:active,
+#hub button:hover,
+#hub button:active {
+    outline:none;
+    box-shadow:none;
+    background:transparent;
+    color: #B7B6C1
+}
+
+h2 {
+    color: #B7B6C1;
+}
+
+h3 {
+    color: #B7B6C1;
+}
+
+/* About Me Page styles */
+#about-main {
+    background-image:url('/images/Batman3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#about-main h1, #about-main h2, #about-main h3, #about-main h4, #about-main p {
+    color: #7851A9;
+}
+
+/* Projects Page styles */
+#Projects-main {
+    background-image:url('/images/ironman.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
 }

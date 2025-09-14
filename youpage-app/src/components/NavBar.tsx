@@ -16,7 +16,8 @@ const defaultItems = ['ABOUT ME','PROJECTS','RESUME','EXPERIENCE','CHRIST','CODE
 const NavBar: React.FC<NavBarProps> = ({ items = defaultItems, onSelect }) => { // Destructure props with default
   return (
     <nav id="hub" aria-label="Main navigation"> {/* Semantic navigation container */}
-      {items.map(label => {if (label === 'ABOUT ME') {
+      {items.map(label =>{
+        if (label === 'ABOUT ME') {
         return (
           <Link key= {label} to="/about">
             {label}
@@ -37,6 +38,14 @@ const NavBar: React.FC<NavBarProps> = ({ items = defaultItems, onSelect }) => { 
           <Link key={label} to='/experience'>
             {label}
             </Link>
+        );
+      }
+
+      if (label === 'RESUME') {
+        return (
+          <Link key={label} to='/resume'>
+            {label}
+          </Link>
         );
       }
       

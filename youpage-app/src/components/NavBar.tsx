@@ -48,6 +48,14 @@ const NavBar: React.FC<NavBarProps> = ({ items = defaultItems, onSelect }) => { 
           </Link>
         );
       }
+
+      if (label === 'CHRIST') {
+        return (
+          <Link key= {label} to="/christ">
+            {label}
+          </Link>
+        )
+      }
       
       return (
         <button

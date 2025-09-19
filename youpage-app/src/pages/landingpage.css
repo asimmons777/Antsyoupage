@@ -121,7 +121,7 @@ h3 {
 
 /* About Me Page styles */
 #about-main {
-    background-image:url('/images/Batman3.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +135,6 @@ h3 {
 
 /* Projects Page styles */
 #Projects-main {
-    background-image:url('/images/ironman.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

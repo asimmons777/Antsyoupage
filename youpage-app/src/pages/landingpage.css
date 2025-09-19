@@ -75,6 +75,12 @@ h1 {
     text-align: center;
 }
 
+li {
+    color: #B7B6C1;
+    font-size: 20px;
+    list-style-type: none;
+}
+
 /* NavBar styles */
 #hub a, #hub button {
     -webkit-tap-highligh-color: transparent; 
@@ -135,6 +141,15 @@ h3 {
 
 /* Projects Page styles */
 #Projects-main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Resume Page styles */
+#Resume-main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

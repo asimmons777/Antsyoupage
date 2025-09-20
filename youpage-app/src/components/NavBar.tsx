@@ -54,9 +54,17 @@ const NavBar: React.FC<NavBarProps> = ({ items = defaultItems, onSelect }) => { 
           <Link key= {label} to="/christ">
             {label}
           </Link>
-        )
+        );
       }
-      
+
+      if (label === 'CODEHAVEN') {
+        return (
+          <Link key= {label} to="/codehaven">
+            {label}
+          </Link>
+        );
+      }
+
       return (
         <button
           key={label} // Stable key helps React reconcile list efficiently

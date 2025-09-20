@@ -7,7 +7,7 @@ body {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif, Arial;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif, Arial;
 }
 
 
@@ -34,7 +34,7 @@ footer { background-color: #7851A9;
 }
 
 #hub {background-color: #000f08;
-    gap: 130px;
+    gap: 144px;
     display: flex;
     flex-direction: row;
     padding-left:40px;
@@ -46,7 +46,7 @@ footer { background-color: #7851A9;
 
 button {
     background: none;
-    color: #B7B6C1;      
+    color: #7851A9;      
     border: none;
     border-radius: 0;
     height: auto;
@@ -58,27 +58,42 @@ button {
 }
 
 p {
-    color: #B7B6C1;
+    color: #7851A9;
     font-size: 20px;
 }
 
 h4 {
-    color: #B7B6C1;
+    color: #7851A9;
     font-size: 35px;
     font-weight: 700;
+    margin-top: 0px;
 }
 
 h1 {
-    color: #B7B6C1;
+    color: #7851A9;
     font-size: 80px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 li {
-    color: #B7B6C1;
+    color: #7851A9;
     font-size: 20px;
     list-style-type: none;
+}
+
+.contact-icon { width: 20px; height: 20px; vertical-align: middle; }
+.contact-icon.phone   { color: #16A34A; } /* green */
+.contact-icon.email   { color: #D14836; } /* red */
+.contact-icon.linkedin{ color: #0A66C2; } /* LinkedIn blue */
+.contact-icon.github  { color: #7851A9; } /* GitHub black */
+
+#contact-info {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 /* NavBar styles */
@@ -104,7 +119,7 @@ li {
 
 #hub a:link,
 #hub a:visited{
-    color: #B7B6C1;
+    color: #7851A9;
 }
 
 #hub a:hover,
@@ -114,15 +129,15 @@ li {
     outline:none;
     box-shadow:none;
     background:transparent;
-    color: #B7B6C1
+    color: #7851A9
 }
 
 h2 {
-    color: #B7B6C1;
+    color: #7851A9;
 }
 
 h3 {
-    color: #B7B6C1;
+    color: #7851A9;
 }
 
 /* About Me Page styles */
@@ -156,3 +171,5 @@ h3 {
     min-height: 100vh;
     padding: 20px;
 }
+
+

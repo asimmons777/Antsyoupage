@@ -1,6 +1,7 @@
 import './landingpage.css'; // Page‑specific styles (scoped by selectors used below)
 import NavBar from '../components/NavBar'; // Reusable navigation bar
 import Footer from '../components/Footer';
+import { FaPhone, FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa'; // Icons for contact info
 
 // Functional component representing the personal landing page.
 const YouPage: React.FC = () => {
@@ -16,9 +17,12 @@ const YouPage: React.FC = () => {
                     <div>
                         <h1>Hi I'm Ant!</h1> {/* Primary greeting heading */}
                         <h4>Software Engineer</h4> {/* Subtitle / role */}
-                        <p>Phone: 773-627-8527</p>
-                        <p>Email: <a href="mailto:aasimmons777@gmail.com">aasimmons777@gmail.com</a></p>
-                        <p>linkedin: <a href="https://www.linkedin.com/in/anthony-simmons-0964a6365/" target="_blank" rel="noopener noreferrer">here</a></p>
+                        <div id="contact-info">
+                          <FaPhone className="contact-icon phone" />
+                          <FaEnvelope className="contact-icon email" />
+                          <a href="https://www.linkedin.com/in/anthony-simmons77/"><FaLinkedin className="contact-icon linkedin" /></a>
+                          <a href="https://github.com/asimmons777"><FaGithub className="contact-icon github" /></a>
+                        </div>
                     </div>
                 </div>
 
@@ -27,11 +31,7 @@ const YouPage: React.FC = () => {
                       <img src="/images/Anthony Simmons Headshot.png" alt="Anthony headshot" />
                 </div>
             </div>
-
-            {/* Site footer with dynamic current year */}
-            <footer>
-                <p>© {new Date().getFullYear()} Ant's YouPage. All rights reserved.</p>
-            </footer>
+            <Footer />
         </>
     );
 };
